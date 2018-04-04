@@ -6,10 +6,13 @@
 html, body {
     height: 100%;
     margin: 0 auto;
+}
+
+html{
     background-image: url("bg.png");
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: light;
 }
 
@@ -73,7 +76,6 @@ table {
     bottom: 50px;
     height: 860px;
     background-color: #f2f2f2;
-    
 }
 
 .sub1{
@@ -98,7 +100,6 @@ table {
 #gambar{
     position: static;
     float: right;
-    width: 30%;
     margin-left: 20px;
 }
 
@@ -110,11 +111,18 @@ table {
     bottom: 120px;
     border-radius: 10px;
     box-shadow: 0 5px 100px 0 rgba(26, 30, 35,0.5);
+    overflow: visible;
+    visibility: visible; 
+    clear:both;
 }
 
 #parent{
     text-align: center;
     max-width:900px;
+}
+
+.proj{
+    display: none;
 }
 
 .photo{
@@ -196,6 +204,10 @@ table {
     letter-spacing: 5px;
 }
 
+.caps{
+    display: none;
+}
+
 .tombol {
     position: relative;
     display:inline-block;
@@ -236,37 +248,16 @@ table {
 input[type=text] {
     width: 100%;
     margin: 0 0 10px 10px;
-    padding: 6px 30px 6px 20px;
+    padding: 6px 20px 6px 20px;
     border-radius: 20px;
     border:none;
     color: #d2d2d2;
     background-color: #322e45
 }
 
-select {
-    width: 100%;
-    padding: 6px 30px 6px 20px;
-    margin: 0 0 10px 10px;
-    border-radius: 20px;
-    border:none;
-    color: #d2d2d2;
-    background-color: #322e45;
-}
-
-input[type=date] {
-    text-transform: uppercase;
-    width: 100%;
-    padding: 6px 30px 6px 20px;
-    margin: 0 0 10px 10px;
-    border-radius: 20px;
-    border:none;
-    color: #d2d2d2;
-    background-color: #322e45;
-}
-
 textarea{
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 20px;
     margin: 0 0 0 10px;
     border-radius: 5px;
     border:none;
@@ -335,7 +326,16 @@ hr {
     text-align: center;
 }
 
+.web {
+    display: block;
+}
+
+.andro {
+    display: none;
+}
+
 #footer{
+    border-top: solid 10px #322e45;
     color: #d2d2d2;
     text-align: center;
     background-color: #322e45;
@@ -343,4 +343,198 @@ hr {
     font-size: 18px;
     padding: 20px;
     font-family: light;
+}
+
+@media screen and (max-width: 1000px){
+    #intro {
+        height: 1920px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #hi{
+        margin-top: -250px;
+        letter-spacing: 3px;
+        font-size: 126px;
+    }
+
+    #nama{
+        margin-top: 30px;
+        font-family: nama;
+        font-size: 112px;
+        letter-spacing:10px;
+        line-height: 0.9;
+    }
+
+    #tentang{
+        margin-top: 70px;
+        font-size: 52px;
+        letter-spacing:8px;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom: 100px;
+        transform: scale(1.2);
+    }
+
+    .tombol {
+        transform: scale(1.8);
+    }
+    .tombol:active{
+        transform: scale(1.6);
+    }
+
+    #about{
+        position: relative;
+        top: -510px;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: none;
+        box-shadow: 0 5px 100px 0 rgba(26, 30, 35,0.5);
+    }
+
+    .sub1{
+        font-size: 44px;
+    }
+
+    .judul1{
+        margin-top: 20px;
+        font-family: heavy;
+        font-size: 96px;
+    }
+
+    .isi1{
+        margin-top: -30px;
+        font-size: 44px;
+    }
+
+    #gambar{
+        transform: scale(1.1);
+        float: left;
+        padding-right: 40px;
+    }
+
+    .photo{
+        display: none;
+    }
+
+    .masking {
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .proj{
+        display: block;
+        height: 250px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .proj img{
+        filter: blur(8px);
+        position: relative;
+        top: -120px;
+        height: 500px;
+        width: 500px;
+        opacity: 0.6;
+        transform: scale(1);
+        transition: all 0.1s ease-in;
+    }
+
+    .proj:active{
+      transition: all 0.2s ease-in;
+      transform: scale(1.2);
+      opacity: 1;
+      z-index: 2;
+    }
+
+    .proj img:active{
+      filter: blur(0);
+      transition: all 0.1s ease-out;
+    }
+
+    .sub2{
+        font-size: 44px;
+        margin-top: -450px;
+    }
+
+    .judul2{
+        font-size: 96px;
+    }
+
+    .isi2{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        font-size: 44px;
+        text-align: justify;
+    }
+
+    #more {
+        margin-top: 20px;
+    }
+
+    p.caps{
+        display: inline-block;
+        float: center;
+        margin: -30px 20px;
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .sosmed{
+        display: none;
+    }
+
+    .caps {
+        padding: 10px 45px 10px 45px;
+        border-radius: 15px;
+        border:none;
+    }
+
+    .caps.fb{
+        color: #fff;
+        background-color: #3c5a99;
+    }
+
+    .caps.ig{
+        color: #fff;
+        background-color: #d43d66;
+    }
+
+    .caps.tt{
+        color: #fff;
+        background-color: #28aae1;
+    }
+
+    .caps:hover{
+        transition: all 0.5s ease-out;
+        box-shadow: 0 5px 100px 0 rgba(26, 30, 35,0.5);
+        color: #000;
+        background-color: #ffffff;
+    }
+    .judul3{
+        padding-top: -50px;
+        font-size: 96px;
+    }
+    #content3{
+        height: 800px;
+    }
+    #pesan {
+        font-size: 38px;
+        margin: 0 60px;
+    }
+
+    #tablenya{
+        margin-top: 100px;
+        transform: scale(2);
+    }
+    .web {
+        display: none;
+    }
+
+    .andro {
+        font-size: 34px;
+        display: block;
+    }
 }
