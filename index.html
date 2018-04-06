@@ -1,0 +1,178 @@
+<!--===================================================
+=======================================================
+
+  █████▒ ▄▄▄       ██▀███   ▒█████   █    ██   █████  
+▓██   ▒ ▒████▄    ▓██ ▒ ██▒▒██▒  ██▒ ██  ▓██▒▒██▓  ██▒
+▒████ ░ ▒██  ▀█▄  ▓██ ░▄█ ▒▒██░  ██▒▓██  ▒██░▒██▒  ██░
+░▓█▒  ░ ░██▄▄▄▄██ ▒██▀▀█▄  ▒██   ██░▓▓█  ░██░░██  █▀ ░
+░▒█░     ▓█   ▓██▒░██▓ ▒██▒░ ████▓▒░▒▒█████▓ ░▒███▒█▄ 
+ ▒ ░     ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░░ ▒▒░ ▒ 
+ ░        ▒   ▒▒ ░  ░▒ ░ ▒░  ░ ▒ ▒░ ░░▒░ ░ ░  ░ ▒░  ░ 
+ ░ ░      ░   ▒     ░░   ░ ░ ░ ░ ▒   ░░░ ░ ░    ░   ░ 
+              ░  ░   ░         ░ ░     ░         ░    
+              	 script By Farouq                                        
+========================================================
+========================================================-->
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Welcome</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="footage/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="footage/favicon.ico"/>
+ </head>
+ <body ondragstart="return false;" ondrop="return false;">
+  <table style="width:100%;height:100%;">
+  <!-- Intro -->
+  <tr>
+   <td id="intro">
+    <p id="hi">Hi, saya<br></p>
+    <p id="nama">Farouq Mulya Al Simabua<br>
+    <p id="tentang">Designer, Editor &amp; Programmer <br></p>
+    <a href="#about" class="tombol" onclick="about()">More</a>
+   </td>
+  </tr>
+
+  <!-- Content -->
+  <tr>
+   <td id="content">
+   <!-- Perkenalan -->
+   <table>
+    <tr>
+     <td id="about" onscroll="about(this);">
+      <p class="sub1">Info Tentang Saya</p><br>
+      <p class="judul1">About Me</p><br>
+      <img src="footage/gw.png" id="gambar" alt="Photo Gw">
+      <p class="isi1">
+        Saya seorang laki-laki yang lahir di Jakarta pada 7 agustus 1999, 
+        beragama islam dan tinggal di Jl. Bulak Timur Rt.004/Rw.016 Kelurahan 
+        Klender Kecamatan Duren Sawit, Jakarta Timur. Saya memiliki tinggi badan 178 dengan berat 54kg.<br>
+
+        <br>Keterampilan yang saya miliki adalah dapat membuat logo, banner, pamflet, brosur, poster, infographic, design mockup, design UI, animasi 2D&amp;3D, visual effect, intro/bumper, iklan layanan masyarakat, video musik, motion graphic, media interaktif, web, maintenance PC/merakit komputer.
+      </p>
+     </td>
+    </tr>
+    <tr>
+     <td id="parent">
+      <p class="sub2">Link Project</p><br>
+      <p class="judul2">Project</p><br><hr>
+      <p class="isi2">Jika Anda Penasaran dengan project yang pernah saya buat anda dapat melihatnya melalui ketiga website di bawah ini</p>
+      <a href="https://sta.sh/2e04hxsqrqr" target="_blank">
+      	<img src="footage/da.png" class="photo" alt="da">
+      </a>
+      <a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank">
+      	<img src="footage/yt.png" class="photo" alt="yt">
+      </a>
+      
+      <a id="opsi">
+      	<img src="footage/med.png" class="photo" alt="mediainteraktif">
+      </a>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="title">Pilih Versi</p>
+          <a class="ver" href="https://goo.gl/Jz11Hz" target="_blank">Versi Desktop</a>
+          <a class="ver" href="https://goo.gl/U3DgQc" target="_blank">Versi Android</a>
+        </div>
+      </div>
+
+      <div id="overlay" >
+        <div class="overlay-control">
+          <p class="title">Pilih Versi</p>
+          <a class="ver dua" href="https://goo.gl/Jz11Hz" target="_blank">Versi Desktop</a>
+          <a class="ver dua" href="https://goo.gl/U3DgQc" target="_blank">Versi Android</a>
+        </div>
+      </div>
+      <!-- Versi HP -->
+      <div class="masking"><div class="proj da" style="background-color: #009544">
+      	<a href="https://sta.sh/2e04hxsqrqr" target="_blank">
+      		<img src="footage/da.png" alt="da">
+       </a>
+      </div>
+      <div class="proj yt" style="background-color: #ee1c1b">
+      	<a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank">
+      		<img src="footage/yt.png" alt="yt">
+       </a>
+      </div>
+      <div class="proj med" style="background-color: #000000">
+      	<a id="triger">
+      		<img src="footage/med.png" alt="mediainteraktif">
+       </a>
+      </div></div>
+     </td>
+    </tr>  			
+   </table>
+   </td>
+  </tr>
+  
+  <!-- Sosial Media -->
+  <tr>
+   <td id="content2">
+    <p id="more">Temukan Saya di Sosial Media</p>
+	 <a href="http://facebook.com/farouq.simabua" target="_blank">
+	 	<p class="caps fb">Facebook</p>
+	 	<img src="footage/fb.png" class="sosmed" alt="fb">
+	 </a>
+	 <a href="https://www.instagram.com/farouqsimabua/" target="_blank">
+	 	<p class="caps ig">Instagram</p>
+	 	<img src="footage/ig.png" class="sosmed" alt="ig">
+	 </a>
+	   <a href="https://twitter.com/@farouqsimabua" target="_blank">
+	   	<p class="caps tt">Twitter</p>
+	 	<img src="footage/twitter.png" class="sosmed" alt="twitter">
+	 </a>
+   </td>
+  </tr>
+
+  <!-- Info&Daftar -->
+  <tr>
+   <td id="content3">
+   	<p class="judul3">Interest??</p><br><hr>
+      <p id="pesan">Jika anda tertarik untuk membuat project dengan saya, silahkan mengisi form dibawah ini</p>
+    <table id="tablenya">
+     <form name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com"
+      method="POST">
+     <tr>
+      <td class="blok">Nama</td>
+      <td>:</td>
+      <td><input type="text" name="nama" placeholder="Nama Anda"></td>
+     </tr>
+     <tr>
+      <td class="blok">Email</td>
+      <td>:</td>
+      <td><input type="text" name="mail" placeholder="Email Anda"></td>
+     </tr>
+     <tr>
+      <td class="blok">Pesan</td>
+      <td>:</td>
+      <td><textarea name="pesan" placeholder="Pesan" cols="27" rows="3"></textarea>
+      </td>
+     </tr>
+     <tr>
+      <td id="save" colspan="3">
+       <input type="submit" value="kirim">
+       <input type="reset" value="batal">
+      </td>
+     </tr>
+    </form>
+    </table>
+   </td>
+  </tr>
+
+  <!-- Footer/Copyright -->
+   <tr>
+    <td id="footer">
+     <span class="web">&copy; Farouq Mulya Al Simabua; +62817 - 4800 - 572</span>
+     <span class="andro"><marquee>&copy; Farouq Mulya Al Simabua; +62817 - 4800 - 572</marquee></span>
+    </td>
+   </tr>    
+  </table>
+  <script src="footage/jquery.min.js"></script>
+  <script src="footage/jquery.scrollTo.min.js"></script>
+  <script src="footage/jquery.localScroll.min.js"></script>
+  <script src="footage/terjs.js"></script>
+ </body>
+</html>
