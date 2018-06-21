@@ -1,141 +1,83 @@
-<!--===================================================
-=======================================================
-
-  █████▒ ▄▄▄       ██▀███   ▒█████   █    ██   █████  
-▓██   ▒ ▒████▄    ▓██ ▒ ██▒▒██▒  ██▒ ██  ▓██▒▒██▓  ██▒
-▒████ ░ ▒██  ▀█▄  ▓██ ░▄█ ▒▒██░  ██▒▓██  ▒██░▒██▒  ██░
-░▓█▒  ░ ░██▄▄▄▄██ ▒██▀▀█▄  ▒██   ██░▓▓█  ░██░░██  █▀ ░
-░▒█░     ▓█   ▓██▒░██▓ ▒██▒░ ████▓▒░▒▒█████▓ ░▒███▒█▄ 
- ▒ ░     ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ ░░ ▒▒░ ▒ 
- ░        ▒   ▒▒ ░  ░▒ ░ ▒░  ░ ▒ ▒░ ░░▒░ ░ ░  ░ ▒░  ░ 
- ░ ░      ░   ▒     ░░   ░ ░ ░ ░ ▒   ░░░ ░ ░    ░   ░ 
-              ░  ░   ░         ░ ░     ░         ░    
-              	 script By Farouq                                        
-========================================================
-========================================================-->
-
-
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Welcome</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="footage/style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="footage/favicon.ico"/>
- </head>
- <body ondragstart="return false;" ondrop="return false;">
-  <audio id="bgm" autoplay loop><source src="footage/BGM.mp3" type="audio/mpeg"></audio>
+<head>
+	<title>Selamat datang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#00AEE9">
+	<link rel="shortcut icon" type="image/x-icon" href="src/favicon.ico"/>
+	<link rel="stylesheet" href="src/css.css">
+</head>
+<body>
+	<div id="watch" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closehim(this);">&times;</a>
+		<div class="overlay-content">
+			<!-- Motion Grap Disini -->
+			<div class="videonya">
+				<video id="gw" src="src/me.mp4" controls></video>
+			</div>
+		</div>
+	</div>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+	    <a href="#about" onclick="closeNav()">About</a>
+	    <a href="#project" onclick="closeNav()">Project</a>
+	    <a href="#register" onclick="closeNav()">Contact</a>
+	  </div>
+	</div>
 
-  <table style="width:100%;height:100%;">
-  <!-- Intro -->
-  <tr>
-   <td id="intro">
-    <p id="hi">Hi, saya<br></p>
-    <p id="nama">Farouq Mulya Al Simabua<br>
-    <p id="tentang">Designer, Editor &amp; Programmer <br></p>
-    <a href="#about" class="tombol" onclick="about()">More</a>
-   </td>
-  </tr>
-
-  <!-- Content -->
-  <tr>
-   <td id="content">
-   <!-- Perkenalan -->
-   <table>
-    <tr>
-     <td id="about" onscroll="about(this);">
-      <p class="sub1">Info Tentang Saya</p><br>
-      <p class="judul1">About Me</p><br>
-      <img src="footage/gw.png" id="gambar" alt="Photo Gw">
-      <p class="isi1">
-        Saya seorang laki-laki yang lahir di Jakarta pada 7 agustus 1999, 
-        beragama islam dan tinggal di Jl. Bulak Timur Rt.004/Rw.016 Kelurahan 
-        Klender Kecamatan Duren Sawit, Jakarta Timur. Saya memiliki tinggi badan 178 dengan berat 54kg.<br>
-
-        <br>Keterampilan yang saya miliki adalah dapat membuat logo, banner, pamflet, brosur, poster, infographic, design mockup, design UI, animasi 2D&amp;3D, visual effect, intro/bumper, iklan layanan masyarakat, video musik, motion graphic, media interaktif, web, maintenance PC/merakit komputer.
-      </p>
-      <a id="resume" href="https://goo.gl/u2PdZu">Download Resume</a>
-     </td>
-    </tr>
-    <tr>
-     <td id="parent">
-      <p class="sub2">Link Project</p><br>
-      <p class="judul2">Project</p><br><hr>
-      <p class="isi2">Jika Anda Penasaran dengan project yang pernah saya buat anda dapat melihatnya melalui ketiga website di bawah ini</p>
-      <a href="https://sta.sh/2e04hxsqrqr" target="_blank">
-      	<img src="footage/da.png" class="photo" alt="da">
-      </a>
-      <a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank">
-      	<img src="footage/yt.png" class="photo" alt="yt">
-      </a>
-      
-      <a id="opsi">
-      	<img src="footage/med.png" class="photo" alt="mediainteraktif">
-      </a>
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p class="title">Pilih Versi</p>
-          <a class="ver" href="https://goo.gl/Jz11Hz" target="_blank">Versi Desktop</a>
-          <a class="ver" href="https://goo.gl/U3DgQc" target="_blank">Versi Android</a>
-        </div>
-      </div>
-
-      <div id="overlay" >
-        <div class="overlay-control">
-          <p class="title">Pilih Versi</p>
-          <a class="ver dua" href="https://goo.gl/Jz11Hz" target="_blank">Versi Desktop</a>
-          <a class="ver dua" href="https://goo.gl/U3DgQc" target="_blank">Versi Android</a>
-        </div>
-      </div>
-      <!-- Versi HP -->
-      <div class="masking"><div class="proj da" style="background-color: #009544">
-      	<a href="https://sta.sh/2e04hxsqrqr" target="_blank">
-      		<img src="footage/da.png" alt="da">
-       </a>
-      </div>
-      <div class="proj yt" style="background-color: #ee1c1b">
-      	<a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank">
-      		<img src="footage/yt.png" alt="yt">
-       </a>
-      </div>
-      <div class="proj med" style="background-color: #000000">
-      	<a id="triger">
-      		<img src="footage/med.png" alt="mediainteraktif">
-       </a>
-      </div></div>
-     </td>
-    </tr>  			
-   </table>
-   </td>
-  </tr>
-  
-  <!-- Sosial Media -->
-  <tr>
-   <td id="content2">
-    <p id="more">Temukan Saya di Sosial Media</p>
-	 <a href="http://facebook.com/farouq.simabua" target="_blank">
-	 	<p class="caps fb">Facebook</p>
-	 	<img src="footage/fb.png" class="sosmed" alt="fb">
-	 </a>
-	 <a href="https://www.instagram.com/farouqsimabua/" target="_blank">
-	 	<p class="caps ig">Instagram</p>
-	 	<img src="footage/ig.png" class="sosmed" alt="ig">
-	 </a>
-	   <a href="https://twitter.com/@farouqsimabua" target="_blank">
-	   	<p class="caps tt">Twitter</p>
-	 	<img src="footage/twitter.png" class="sosmed" alt="twitter">
-	 </a>
-   </td>
-  </tr>
-
-  <!-- Info&Daftar -->
-  <tr>
-   <td id="content3">
-   	<p class="judul3">Interest??</p><br><hr>
-      <p id="pesan">Jika anda tertarik untuk membuat project dengan saya, silahkan mengisi form dibawah ini</p>
-    <table id="tablenya">
+	<span class="bar" onclick="openNav()">&equiv;</span>
+	<label class="switch">
+	  <input class="switch-input" type="checkbox" onclick="myfunction(this);" checked>
+	  <span class="slider round"></span>
+	</label>
+	<audio id="myAudio" loop autoplay>
+	  <source src="src/bgm.mp3" type="audio/mp3">
+	  Browser Anda Tidak Support Audio Tag.
+	</audio>
+	<header id="about">
+		<div class="konten">
+			<h2>Hi, Saya</h2>
+			<h1>Farouq Mulya Al Simabua</h1>
+			<h3>Designer, Editor & Programmer</h3>
+			<button id="video" onclick="watchme(this);">Watch</button>
+		</div>
+	</header>
+	<section id="intro">
+		<div class="konten intro">
+			<span class="sub">Tentang Saya</span>
+			<span class="title">About Me</span>
+			<img src="src/gw.png" alt="saia" class="profil">
+			<p>
+				Saya seorang laki-laki yang lahir di Jakarta pada 7 agustus 1999, beragama islam dan tinggal di Jl. Bulak Timur Rt.004/Rw.016 Kelurahan Klender Kecamatan Duren Sawit, Jakarta Timur. Saya memiliki tinggi badan 178 dengan berat 54kg. 
+				<br> <br>
+				Keterampilan yang saya miliki adalah dapat membuat logo, banner, pamflet, brosur, poster, infographic, design mockup, design UI, animasi 2D&3D, visual effect, intro/bumper, iklan layanan masyarakat, video musik, motion graphic, media interaktif, web, maintenance PC/merakit komputer.
+			</p>
+			<a href="https://goo.gl/u2PdZu" id="resume" target="_blank">Download Resume</a>
+		</div>
+		<div id="project" class="konten portofolio">
+			<span class="sub">Proyek Saya</span>
+			<span class="title">My Project</span>
+			<div class="link">
+				<a href="https://sta.sh/2e04hxsqrqr" target="_blank" class="list-link design"></a>
+				<a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank" class="list-link editing"></a>
+				<a href="https://github.com/stdarkpha?tab=repositories" target="_blank" class="list-link coding"></a>
+			</div>
+		</div>
+	</section>
+	<section id="find">
+		<p class="heading">Temukan Saya di Sosial Media</p>
+		<div id="sosmed">
+			<a href="http://facebook.com/farouq.simabua" class="sosmed facebook"></a>
+			<a href="https://www.instagram.com/farouqsimabua/" class="sosmed twitter"></a>
+			<a href="https://twitter.com/@farouqsimabua" class="sosmed instagram"></a>
+		</div>
+	</section>
+	<section id="register">
+	<p class="heading2">Interest??</p><hr>
+	<p>Jika anda tertarik untuk membuat project dengan saya, silahkan mengisi form dibawah ini</p>
+	<table id="tablenya">
      <form name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com"
       method="POST">
      <tr>
@@ -162,20 +104,60 @@
      </tr>
     </form>
     </table>
-   </td>
-  </tr>
+	</section>
+	<footer>© Farouq Mulya Al Simabua; +62898 - 4288 - 566</footer>
+	<script src="src/jquery.min.js"></script>
+  	<script src="src/jquery.scrollTo.min.js"></script>
+  	<script src="src/jquery.localScroll.min.js"></script>
+	<script>
+	function watchme() {
+	    document.getElementById("watch").style.height = "100%";
+	    x.pause();
+	    y.play();
+	    y.style.display = "initial";
+	}
 
-  <!-- Footer/Copyright -->
-   <tr>
-    <td id="footer">
-     <span class="web">&copy; Farouq Mulya Al Simabua; +62898 - 4288 - 566</span>
-     <span class="andro"><marquee>&copy; Farouq Mulya Al Simabua; +62898 - 4288 - 566</marquee></span>
-    </td>
-   </tr>    
-  </table>
-  <script src="footage/jquery.min.js"></script>
-  <script src="footage/jquery.scrollTo.min.js"></script>
-  <script src="footage/jquery.localScroll.min.js"></script>
-  <script src="footage/terjs.js"></script>
- </body>
+	function closehim() {
+	    document.getElementById("watch").style.height = "0%";
+	    y.pause();
+	    // y.style.display = "none";
+	    x.play();
+
+	    setTimeout(function () {y.style.display = "none";}, 300);
+	}
+
+	function openNav() {
+	    document.getElementById("myNav").style.height = "100%";
+	}
+
+	function closeNav() {
+	    document.getElementById("myNav").style.height = "0%";
+	}
+
+	$('.overlay-content').localScroll();
+
+	function cekform() {
+	var x = document.forms["daftar"]["nama", "mail", "pesan"].value;
+	if (x == null || x == "") {
+	    alert("Harap Isi Form Dengan Benar!!");
+	    return false;
+	  }
+	}
+
+	var x = document.getElementById("myAudio");
+	var y = document.getElementById("gw");
+	    function myfunction(obj){
+	    if (obj.checked)
+	    {
+	        //make box2 = box1 when checked
+	        x.play(); 
+	    }
+	    else
+	    {
+	        //some other code if you want something to happen when it is unchecked
+	        x.pause();
+	    }
+	}
+	</script>
+</body>
 </html>
