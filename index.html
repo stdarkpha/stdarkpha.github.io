@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selamat datang</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#00AEE9">
+	<link rel="shortcut icon" type="image/x-icon" href="src/favicon.ico"/>
+	<link rel="stylesheet" href="src/css.css">
+</head>
+<body>
+	<div id="watch" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closehim(this);">&times;</a>
+		<div class="overlay-content">
+			<!-- Motion Grap Disini -->
+			<div class="videonya">
+				<video id="gw" src="src/me.mp4" controls></video>
+			</div>
+		</div>
+	</div>
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+	    <a href="#about" onclick="closeNav()">About</a>
+	    <a href="#project" onclick="closeNav()">Project</a>
+	    <a href="#register" onclick="closeNav()">Contact</a>
+	  </div>
+	</div>
+
+	<span class="bar" onclick="openNav()">&equiv;</span>
+	<label class="switch">
+	  <input class="switch-input" type="checkbox" onclick="myfunction(this);" checked>
+	  <span class="slider round"></span>
+	</label>
+	<audio id="myAudio" loop autoplay>
+	  <source src="src/bgm.mp3" type="audio/mp3">
+	  Browser Anda Tidak Support Audio Tag.
+	</audio>
+	<header>
+		<div class="konten">
+			<h2>Hi, Saya</h2>
+			<h1>Farouq Mulya Al Simabua</h1>
+			<h3>Designer, Editor & Programmer</h3>
+			<button id="video" onclick="watchme(this);">Watch</button>
+		</div>
+	</header>
+	<section id="intro">
+		<div class="konten intro">
+			<span class="sub">Tentang Saya</span>
+			<span class="title">About Me</span>
+			<div class="profil">
+				<div class="hover"></div>
+			</div>
+			<p id="about">
+				Saya seorang laki-laki yang lahir di Jakarta pada 7 agustus 1999, beragama islam dan tinggal di Jl. Bulak Timur Rt.004/Rw.016 Kelurahan Klender Kecamatan Duren Sawit, Jakarta Timur. Saya memiliki tinggi badan 178 dengan berat 54kg. 
+				<br><br>
+				Keterampilan yang saya miliki adalah dapat membuat logo, banner, pamflet, brosur, poster, infographic, design mockup, design UI, animasi 2D&3D, visual effect, intro/bumper, iklan layanan masyarakat, video musik, motion graphic, media interaktif, web, maintenance PC/merakit komputer.
+			</p>
+			<a href="https://goo.gl/N6oeJk" id="resume" target="_blank">Download Resume</a>
+		</div>
+		<div id="project" class="konten portofolio">
+			<span class="sub">Proyek Saya</span>
+			<span class="title">My Project</span><hr>
+			<p>Lihat lebih banyak project saya melalui link dibawah ini</p>
+			<div class="link">
+				<a href="https://sta.sh/2e04hxsqrqr" target="_blank" class="list-link design"></a>
+				<a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank" class="list-link editing"></a>
+				<a href="https://github.com/stdarkpha?tab=repositories" target="_blank" class="list-link coding"></a>
+			</div>
+		</div>
+	</section>
+	<section id="find">
+		<p class="heading">Temukan Saya di Sosial Media</p>
+		<div id="sosmed">
+			<a href="http://facebook.com/farouq.simabua" class="sosmed facebook"></a>
+			<a href="https://www.instagram.com/farouqsimabua/" class="sosmed twitter"></a>
+			<a href="https://twitter.com/@farouqsimabua" class="sosmed instagram"></a>
+		</div>
+	</section>
+	<section id="register">
+	<p class="heading2">Interest??</p><hr>
+	<p>Jika anda tertarik untuk membuat project dengan saya, silahkan mengisi form dibawah ini</p>
+	<table id="tablenya">
+     <form name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com"
+      method="POST">
+     <tr>
+      <td class="blok">Nama</td>
+      <td>:</td>
+      <td><input type="text" name="nama" placeholder="Nama Anda"></td>
+     </tr>
+     <tr>
+      <td class="blok">Email</td>
+      <td>:</td>
+      <td><input type="text" name="mail" placeholder="Email Anda"></td>
+     </tr>
+     <tr>
+      <td class="blok">Pesan</td>
+      <td>:</td>
+      <td><textarea name="pesan" placeholder="Pesan" cols="27" rows="3"></textarea>
+      </td>
+     </tr>
+     <tr>
+      <td id="save" colspan="3">
+       <input type="submit" value="kirim">
+       <input type="reset" value="batal">
+      </td>
+     </tr>
+    </form>
+    </table>
+	</section>
+	<footer>© Farouq Mulya Al Simabua; +62898 - 4288 - 566</footer>
+	<script src="src/jquery.min.js"></script>
+  	<script src="src/jquery.scrollTo.min.js"></script>
+  	<script src="src/jquery.localScroll.min.js"></script>
+	<script>
+
+	function hover() {
+		this.src='src/hover.png';
+	}
+
+	function watchme() {
+	    document.getElementById("watch").style.height = "100%";
+	    x.pause();
+	    y.play();
+	    y.style.display = "initial";
+	}
+
+	function closehim() {
+	    document.getElementById("watch").style.height = "0%";
+	    y.pause();
+	    // y.style.display = "none";
+	    x.play();
+
+	    setTimeout(function () {y.style.display = "none";}, 300);
+	}
+
+	function openNav() {
+	    document.getElementById("myNav").style.height = "100%";
+	}
+
+	function closeNav() {
+	    document.getElementById("myNav").style.height = "0%";
+	}
+
+	$('.overlay-content').localScroll();
+
+	function cekform() {
+	var x = document.forms["daftar"]["nama", "mail", "pesan"].value;
+	if (x == null || x == "") {
+	    alert("Harap Isi Form Dengan Benar!!");
+	    return false;
+	  }
+	}
+
+	var x = document.getElementById("myAudio");
+	var y = document.getElementById("gw");
+	    function myfunction(obj){
+	    if (obj.checked)
+	    {
+	        //make box2 = box1 when checked
+	        x.play(); 
+	    }
+	    else
+	    {
+	        //some other code if you want something to happen when it is unchecked
+	        x.pause();
+	    }
+	}
+	</script>
+</body>
+</html>
