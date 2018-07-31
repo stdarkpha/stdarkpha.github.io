@@ -154,7 +154,7 @@
 			</div>
 		</div>
 		<p>Jika anda tertarik, anda dapat memperkerjakan saya dengan mengisi form dibawah ini.</p>
-		<form name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com">
+		<form method ="POST" name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com">
 		    <div class="user">
 		      <div class="input">
 		        <label for="nama">Nama : </label>
@@ -187,7 +187,7 @@
 <script>
 	function cekform() {
 	var x = document.forms["daftar"]["nama", "mail", "pesan"].value;
-	if (x == null || x == "") {
+	if (x == null && x == "") {
 	    alert("Harap Isi Form Dengan Benar!!");
 	    return false;
 	  }
