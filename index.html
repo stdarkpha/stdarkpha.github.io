@@ -154,7 +154,7 @@
 			</div>
 		</div>
 		<p>Jika anda tertarik, anda dapat memperkerjakan saya dengan mengisi form dibawah ini.</p>
-		<form action="">
+		<form name="daftar" onsubmit="return cekform()" action="https://formspree.io/farouqsimabua@gmail.com"
 		    <div class="user">
 		      <div class="input">
 		        <label for="nama">Nama : </label>
@@ -185,6 +185,14 @@
 <script src="src/wow.min.js"></script>
 <script src="src/js.js"></script>
 <script>
+	function cekform() {
+	var x = document.forms["daftar"]["nama", "mail", "pesan"].value;
+	if (x == null || x == "") {
+	    alert("Harap Isi Form Dengan Benar!!");
+	    return false;
+	  }
+	}
+	
 	var x = document.getElementById("myAudio");
 	x.play();
 
