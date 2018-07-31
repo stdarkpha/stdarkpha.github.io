@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome!!</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="src/css.css">
+	<link rel="stylesheet" href="src/animate.css">
+	<meta name="theme-color" content="#00AEE9">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="src/favicon.ico"> -->
+</head>
+<body onload="loader()">
+
+<label class="switch wow zoomIn" data-wow-delay="2s">
+  <input class="switch-input" type="checkbox" onclick="Controller(this);" checked>
+  <span class="slider round"></span>
+</label>
+<audio id="myAudio" loop autoplay>
+  <source src="src/bgm.mp3" type="audio/mp3">
+  Browser Anda Tidak Support Audio Tag.
+</audio>
+
+<div class="background">
+	<a href="javascript:void(0)" id="close"></a>
+	<div class="child">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/NBw74Fq0phQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video"></iframe>
+	</div>
+<!-- 	<div class="child">
+		Menu Tambahan
+	</div> -->
+</div>
+
+<!-- Loader Page -->
+<div id="masking">
+	<div id="loader"></div>
+</div>
+
+<!-- Logo -->
+<a href="#home" class="logo wow slideInLeft" data-wow-delay="1.7s"></a>
+
+<nav id="navbar">
+    <ul>
+        <li><a class="nav-list wow zoomInDown" href="#about" data-wow-delay="2.4s">About Me</a></li>
+        <li><a class="nav-list wow zoomInDown" href="#portofolio" data-wow-delay="2.6s">My Portofolio</a></li>
+        <li><a class="nav-list wow zoomInDown" href="#contact" data-wow-delay="2.8s">Contact Me</a></li>
+    </ul>
+</nav>
+<nav id="navbar-mobile">
+	<ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portofolio">My Portofolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+
+<!-- Page 1 : Landing Page -->
+<header id="home">
+	<div class="parallax"></div>
+	<div class="content wow zoomIn" data-wow-delay="1.7s">
+		<div id="info">
+			<p id="title">Hello!<br>I'm Farouq</p>
+			<hr>
+			<p>Designer, Editor, Programmer</p>
+			<button id="video" class="button">Watch</button>
+		</div>
+	</div>
+	<div class="navigation wow zoomIn" data-wow-delay="3s">
+		<a href="#about" class="arrow"></a>
+	</div>
+</header>
+
+<section id="about">
+	<div class="content">
+		<div id="profile">
+			<img src="src/photo.png" alt="">
+			<h1>Farouq Mulya Al Simabua</h1>
+			<p><span id="motto">"Always Create New Way To Find The Best"</span></p>
+			<div id="sosmed">
+				<a href="http://facebook.com/farouq.simabua" class="icon fb"></a>
+				<a href="https://twitter.com/@farouqsimabua" class="icon twit"></a>
+				<a href="https://www.instagram.com/farouqsimabua/" class="icon ig"></a>
+			</div>
+			<hr>
+			<div class="info">
+				<div class="data">
+					<p>Agama</p>
+					<span>:</span>
+					<p>Islam</p>
+				</div>
+				<div class="data">
+					<p>Jenis Kelamin</p>
+					<span>:</span>
+					<p>Laki - Laki</p>
+				</div>
+				<div class="data">
+					<p>Tempat / Tgl Lahir</p>
+					<span>:</span>
+					<p>Jakarta, 07 Agustus 1999</p>
+				</div>
+				<div class="data">
+					<p>Alamat</p>
+					<span>:</span>
+					<p>Jl. Bulak Timur No.9H Rt.004/Rw.016 Kelurahan Klender Kecamatan Duren Sawit Jakarta Timur</p>
+				</div>
+			</div>
+		</div>
+		<div id="story">
+			<h1>About Me</h1>
+			<p>Saya adalah seorang fresh-graduate dari sebuah Sekolah menengah kejuruan yang terletak di Jakarta Timur bernama SMK Negeri 7 Jakarta, dan lulus pada awal juni 2017. Kegiatan sehari-hari saya adalah mengerjakan hobby saya yaitu mendesain, editing video dan membuat web, disela sela istirahat kadang saya mengisi dengan menonton youtube / melihat meme di 1cak & 9gag.</p><br>
+			<p>Target saya kedepannya adalah untuk menjadi fullstack developer yang dapat mengerjakan project besar. Prinsip kerja saya adalah kerja tanggap dan cepat, kerja tanggap bermaksud agar dalam setiap pekerjaan kita dituntut harus memiliki intuisi supaya tidak menghambat pekerjaan orang lain, serta cepat dalam setiap pekerjaan agar kita dapat mengejar target didepan. Namun disetiap pekerjaan yang kita ambil, perlu kita ketahui prosedur dan cara kerja agar kita tidak menemui masalah yang akan menghambat kita kedepannya.</p>
+
+			<a href="https://drive.google.com/open?id=1ZPMoZCOfH4DO8Jw1yOooza2o-CmeO-sT" class="button">Download Resume</a>
+		</div>
+	</div>
+</section>
+
+<section id="portofolio">
+	<div class="content">
+		<h1>Portofolio</h1>
+		<p>Anda dapat melihat project project yang telah saya buat melalui link dibawah ini.</p>
+
+		<div class="link">
+			<a href="https://sta.sh/2e04hxsqrqr" class="list-link dev">
+				<div class="overlay">
+					<div class="isi">design</div>
+				</div>
+			</a>
+			<a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" class="list-link yt">
+				<div class="overlay">
+					<div class="isi">editing</div>
+				</div>
+			</a>
+			<a href="https://github.com/stdarkpha?tab=repositories" class="list-link git">
+				<div class="overlay">
+					<div class="isi">coding</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="content">
+		<h1>Contact At:</h1>
+		<div class="list">
+			<div class="item"><img src="src/telp.png" alt=""><p>+62898 4288 566</p></div>
+			<hr>
+			<div class="item"><img src="src/marker.png" alt="">
+			<p>Jl. Bulak Timur Kelurahan Klender Jakarta Timur</p>
+			</div>
+			<hr>
+			<div class="item"><img src="src/mail.png" alt="">
+			<p>farouqsimabua@gmail.com</p>
+			</div>
+		</div>
+		<p>Jika anda tertarik, anda dapat memperkerjakan saya dengan mengisi form dibawah ini.</p>
+		<form action="">
+		    <div class="user">
+		      <div class="input">
+		        <label for="nama">Nama : </label>
+		        <input type="text" name="nama" id="nama"><hr>
+		      </div>
+		      <div class="input">
+		        <label for="email">Email : </label>
+		        <input type="email" name="email" id="email"><hr>
+		      </div>
+		    </div>
+		    <div class="pesan">
+		      <label for="pesan">Pesan : </label>
+		      <textarea name="pesan" id="pesan"></textarea>
+		    </div>
+		    <div class="opsi">
+		    	<input type="submit" class="button submit">
+		    	<input type="reset" class="button reset">
+		    </div>
+		 </form>
+	</div>
+</section>
+<footer>&copy; Farouq Mulya Al Simabua | 2018</footer>
+
+<script src="src/jquery.min.js"></script>
+<script src="src/jquery.scrollTo.min.js"></script>
+<script src="src/jquery.localScroll.min.js"></script>
+<script src="src/player.js" type="text/javascript"></script>
+<script src="src/wow.min.js"></script>
+<script src="src/js.js"></script>
+<script>
+	var x = document.getElementById("myAudio");
+	x.play();
+
+	function loader(){
+		  lottie.loadAnimation({
+		  container: document.getElementById('loader'),
+		  renderer: 'svg',
+		  loop: false,
+		  autoplay: true,
+		  path: 'src/data.json'
+		});
+
+		new WOW().init();
+
+		$("#masking").delay(2000).fadeOut(300,
+			function() { 
+				$(this).remove();
+		});
+	}
+
+
+	// script hide logo & navbar (yg ngalangin di mobile ver)
+	$( window ).resize(function() {
+	if ($(window).height() < 480 ) {
+		$("input, textarea").focus(function ()
+		{
+			$("#navbar, .logo").css({ top : '-5.5em'});
+		}).mouseout(function()
+		{
+			$("#navbar, .logo").css({ top : '1.5em'});
+		})
+	}
+	})
+
+	$('#video').click(function(){
+		$('.background').css({height : '100%'});
+		x.pause();
+
+		var videoURL = $('.video').prop('src');
+		videoURL += "?autoplay=1";
+		$('.video').prop('src',videoURL);
+	})
+
+	$('#close').click(function(){
+		$('.background').css({height : '0'});
+		x.play();
+		
+		var video = $(".video").attr("src");
+		$(".video").attr("src","");
+		$(".video").attr("src",video);
+	})
+
+	function Controller(obj){
+	    if (obj.checked)
+	    {
+	        x.play(); 
+	    }
+	    else
+	    {
+	        x.pause();
+	    }
+	}
+</script>
+</body>
+</html>
