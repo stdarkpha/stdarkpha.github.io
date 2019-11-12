@@ -567,6 +567,7 @@ nav {
 }
 
 nav .container {
+	align-items: center;
 	justify-content: center;
 	height: 75px;
 }
