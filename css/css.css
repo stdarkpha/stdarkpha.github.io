@@ -1039,6 +1039,16 @@ form input, select, textarea, form input{
 	background-color: var(--upper);
 }
 
+option {
+	background-color: var(--upper);
+	color: var(--dark);
+}
+
+option:hover {
+	background-color: var(--base);
+	color: var(--theme);
+}
+
 form input::placeholder, select::placeholder, textarea::placeholder, form input::placeholder{
 	color: var(--dark);
 }
