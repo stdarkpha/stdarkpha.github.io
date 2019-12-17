@@ -1,9 +1,10 @@
 :root {
+	/* dark theme preset color*/
 	--title : #EEF0FD;
 	--regular : #D3D4EC;
 	--dark : #505162; /* dark color text*/
 	--theme : #275EFE; /* warna tema biru*/
-	--upper: #111111; /* warna diatas background*/
+	--upper: #0C0C0F; /* warna diatas background*/
 	--base : #09090B; /*warna hitam background*/
 }
 
@@ -1024,8 +1025,8 @@ form div label{
 	color: var(--regular);
 }
 
-form input, select, textarea{
-	color: var(--dark) !important;
+form input, select, textarea, form input{
+	color: var(--dark);
 	font-family: montserrat;
 	margin-top: 5px;
 
@@ -1035,7 +1036,11 @@ form input, select, textarea{
 	padding: 1em 2em;
 	border-radius: 5px;
 	border: 1px solid var(--base);
-	background-color: #16171C;
+	background-color: var(--upper);
+}
+
+form input::placeholder, select::placeholder, textarea::placeholder, form input::placeholder{
+	color: var(--dark);
 }
 
 form input:focus, textarea:focus , select:focus {
