@@ -573,6 +573,10 @@
 		flex-basis: 0;
 		flex: 1;
 	}
+	
+	#hire .container {
+		text-align: center;
+	}
 
 	.website {
 		grid-gap: 2em;
