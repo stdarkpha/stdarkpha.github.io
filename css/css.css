@@ -574,7 +574,7 @@
 		flex: 1;
 	}
 	
-	#hire .container {
+	#hire h1, #hire p {
 		text-align: center;
 	}
 
