@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en" data-mode="night">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151305442-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-151305442-1');
+    </script>
+    
 	<title>St.Dark_Pha | Your Digital Services Partners</title>
-	<meta charset="utf-8">
+	
 	<meta name="theme-color" content="#275EFE">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Primary Meta Tags -->
 	<meta name="title" content="stdarkpha | Your Digital Services Partners">
 	<meta name="description" content="stdarkpha is a freelancer that working around design, video services, and website. It's service available about 24 hour so you can ask anytime. just simply fill the form or contact at +628984288566">
+	<meta name="keywords" content="stdarkpha, St.Dark_Pha, stdpha site, graphic design, video editor, web developer, freelancer, faster work, cheap prices, kerja cepat, harga murah, hasil berkualitas, desainer, video editing">
+    <link rel="canonical" href="https://www.stdpha.site/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="src/ico.png" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://stdarkpha.github.io/">
+	<meta property="og:url" content="https://stdpha.site/">
 	<meta property="og:title" content="stdarkpha | Your Digital Services Partners">
 	<meta property="og:description" content="stdarkpha is a freelancer that working around design, video services, and website. It's service available about 24 hour so you can ask anytime. just simply fill the form or contact at +628984288566">
 	<meta property="og:image" content="src/preview.jpg">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://stdarkpha.github.io/">
+	<meta property="twitter:url" content="https://stdpha.site/">
 	<meta property="twitter:title" content="stdarkpha | Your Digital Services Partners">
 	<meta property="twitter:description" content="stdarkpha is a freelancer that working around design, video services, and website. It's service available about 24 hour so you can ask anytime. just simply fill the form or contact at +628984288566">
 	<meta property="twitter:image" content="src/preview.jpg">
@@ -29,12 +44,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/css/lightcase.min.css">
-	<link rel="stylesheet" href="css/css.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- Theme Switcher -->
 	<label class="switch">
-	  <input type="checkbox" id="theme-switch">
+	  <input type="checkbox" checked id="theme-switch">
 	  <span class="slider round"></span>
 	</label>
 
@@ -94,21 +110,21 @@
 	<!-- Starline Content -->
 	<section id="masalah" class="problem">
 		<div class="container">
-			<div class="needed"><img width="100%" height="100%" src="src/Asset.png" alt=""> </div>
+			<div class="needed" data-aos="fade-up"><img width="100%" height="100%" src="src/Asset.png" alt=""> </div>
 			<div class="solution">
 				<div class="box">
-					<p>Do you need design, video promotion, or website but dont know how to create and need it fast??</p>
-					<p>Dont worry Im here to help all your problem</p>
+					<p data-aos="fade-right" data-aos-delay="100">Do you need design, video promotion, or website but dont know how to create and need it fast??</p>
+					<p data-aos="fade-right"data-aos-delay="200">Dont worry Im here to help all your problem</p>
 				</div>
-				<a href="#hire" class="btn">Hire Me Now</a>
+				<a data-aos="fade-up" data-aos-delay="400" data-aos-offset="200" href="#hire" class="btn">Hire Me Now</a>
 			</div>
 		</div>
 	</section>
 
 	<section id="reason">
-		<h1 style="text-align: center;">Why Should Stdarkpha</h1>
+		<h1 style="text-align: center;" data-aos="fade-up">Why Should Stdarkpha</h1>
 		<div class="container">
-			<div class="box">
+			<div data-aos="fade-left" class="box">
 				<img class="icon-reason" src="src/icon.png" alt="">
 				<div>
 					<h2>Available 24 Hours</h2>
@@ -116,7 +132,7 @@
 					<p>My services is available in 24 hour so you can ask me anytime</p>
 				</div>
 			</div>
-			<div class="box">
+			<div data-aos="fade-up" data-aos-delay="500" class="box">
 				<img class="icon-reason" src="src/icon2.png" alt="">
 				<div>
 					<h2>Faster Work</h2>
@@ -124,7 +140,7 @@
 					<p>I solve your problem faster than the other with amazing result that can surprise you</p>
 				</div>
 			</div>
-			<div class="box">
+			<div data-aos="fade-right" class="box">
 				<img class="icon-reason" src="src/icon3.png" alt="">
 				<div>
 					<h2>Ultimate Satisfaction</h2>
@@ -137,96 +153,95 @@
 
 	<section id="design" class="portofolio">
 		<div class="container">
-			<p>Heres My Lastest</p>
-			<h1>Design Project</h1>
+			<p data-aos="fade-right">Heres My Lastest</p>
+			<h1 data-aos="zoom-out-up" data-aos-delay="400">Design Project</h1>
 		</div>
-		<div id="design-swiper" class="swiper-container">
-	    
-	    <div class="swiper-wrapper">
-	      <a href="src/1.jpg" data-rel="lightcase" title="" class="swiper-slide">
-	      	<img src="src/1.jpg" alt="">
-	  	  </a>
-		  <a href="src/2.png" data-rel="lightcase" title="" class="swiper-slide">
-		  	<img src="src/2.png" alt="">
-		  </a>
-		  <a href="src/3.png" data-rel="lightcase" title="" class="swiper-slide">
-		  	<img src="src/3.png" alt="">
-		   </a>
-		  <a href="src/4.png" data-rel="lightcase" title="" class="swiper-slide">
-		  	<img src="src/4.png" alt="">
-		   </a>
-	      <a href="src/5.jpg" data-rel="lightcase" title="" class="swiper-slide">
-	      	<img src="src/5.jpg" alt="">
-	      </a>
-		  <a href="src/6.jpg" data-rel="lightcase" title="" class="swiper-slide">
-		  	<img src="src/6.jpg" alt="">
-		  </a>			
-	    </div>
-	    <!-- Add Pagination -->
-	    <div class="swiper-scrollbar"></div>
-	  </div>
-	  	<a href="https://sta.sh/21kko07xxwlf" target="_blank" class="btn">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+		<div data-aos="fade" data-aos-delay="600" id="design-swiper" class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <a href="src/1.jpg" data-rel="lightcase" title="" class="swiper-slide">
+		      	<img src="src/1.jpg" alt="">
+		  	  </a>
+			  <a href="src/2.jpg" data-rel="lightcase" title="" class="swiper-slide">
+			  	<img src="src/2.jpg" alt="">
+			  </a>
+			  <a href="src/3.jpg" data-rel="lightcase" title="" class="swiper-slide">
+			  	<img src="src/3.jpg" alt="">
+			   </a>
+			  <a href="src/4.jpg" data-rel="lightcase" title="" class="swiper-slide">
+			  	<img src="src/4.jpg" alt="">
+			   </a>
+		      <a href="src/5.jpg" data-rel="lightcase" title="" class="swiper-slide">
+		      	<img src="src/5.jpg" alt="">
+		      </a>
+			  <a href="src/6.jpg" data-rel="lightcase" title="" class="swiper-slide">
+			  	<img src="src/6.jpg" alt="">
+			  </a>			
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-scrollbar"></div>
+	  	</div>
+	  	<a data-aos="fade-left" data-aos-offset="0" data-aos-delay="400" href="https://sta.sh/21kko07xxwlf" target="_blank" class="btn">See More <i class="fas fa-long-arrow-alt-right"></i></a>
 	</section>
 
 	<section id="editing" class="portofolio">
 		<div class="container">
-			<p>Heres My Lastest</p>
-			<h1>Editing Project</h1>
+			<p data-aos="fade-right">Heres My Lastest</p>
+			<h1 data-aos="zoom-out-up" data-aos-delay="400">Editing Project</h1>
 		</div>
-		<div id="editing-swiper" class="swiper-container">
-	    <div class="swiper-wrapper">
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/HeA1g-G2vaM?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+		<div data-aos="fade" data-aos-delay="600" id="editing-swiper" class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/HeA1g-G2vaM?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Gk1MOm3nt2w?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
-	      </div>
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Gk1MOm3nt2w?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+		      </div>
 
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/NBw74Fq0phQ?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/NBw74Fq0phQ?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/_N7wa7_GKvs?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/_N7wa7_GKvs?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/nfY7ANkLoaY?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/nfY7ANkLoaY?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
 
-	      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/yjC7uKZT4ms?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
-	    </div>
-	    <div class="swiper-button-next"></div>
-	    <div class="swiper-button-prev"></div>
-	  </div>
-	  <a href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank" class="btn">See More <i class="fas fa-long-arrow-alt-right"></i></a>
+		      <div class="swiper-slide"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/yjC7uKZT4ms?modestbranding=1&autohide=1&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe></div>
+		    </div>
+	    	<div class="swiper-button-next"></div>
+	    	<div class="swiper-button-prev"></div>
+	  	</div>
+	  <a data-aos="fade-left" data-aos-offset="0" data-aos-delay="400" href="https://www.youtube.com/playlist?list=PLOnFKtZkEEAJokfsydjeRld0yd9HAm3Gr" target="_blank" class="btn">See More <i class="fas fa-long-arrow-alt-right"></i></a>
 	</section>
 
 	<section id="website" class="portofolio">
 		<div class="container">
-			<p>Heres My Lastest</p>
-			<h1>Website Project</h1>
+			<p data-aos="fade-right">Heres My Lastest</p>
+			<h1 data-aos="fade">Website Project</h1>
 			<div class="website">
-				<div class="box web1">
-					<img src="src/web.png" alt="">
+				<div data-aos="fade-up" data-aos-delay="100" class="box web1">
+					<img src="src/web.jpg" alt="">
 					<div class="overlay">
 					  <div class="text">Firstmedia Marketing Website</div>
 					  <a href="https://stdarkpha.github.io/daftar-firstmedia/" class="btn">See Website</a>
 					</div>
 				</div>
-				<div class="box web2">
-					<img src="src/web3.png" alt="">
+				<div data-aos="fade-up" data-aos-delay="300" class="box web2">
+					<img src="src/web3.jpg" alt="">
 					<div class="overlay">
 					  <div class="text">Firstmedia Landing Page</div>
 					  <a href="https://stdarkpha.github.io/firstmedia/" class="btn">See Website</a>
 					</div>
 				</div>
-				<div class="box web3">
-					<img src="src/web1.png" alt="">
+				<div data-aos="fade-up" data-aos-delay="500" class="box web3">
+					<img src="src/web1.jpg" alt="">
 					<div class="overlay">
 					  <div class="text">Website Portofolio 2</div>
 					  <a href="https://stdarkpha.github.io/Portofolio2" class="btn">See Website</a>
 					</div>
 				</div>
-				<div class="box web4">
+				<div data-aos="fade-up" data-aos-delay="100"class="box web4">
 					<div class="overlay">
 					  <div class="text">Website Portofolio 1</div>
 					  <a href="https://stdarkpha.github.io/Portofolio1" class="btn">See Website</a>
 					</div>
-					<img src="src/web2.png" alt=""></div>
-				<div class="box build">
+					<img src="src/web2.jpg" alt=""></div>
+				<div data-aos="fade-up" data-aos-delay="300" class="box build">
 					<h2>Your Website</h2>
 					<a href="#hire" class="btn">Lets Build Now</a>
 				</div>
@@ -236,15 +251,15 @@
 
 	<section id="services">
 		<div class="container">
-			<h1>StDarkPha</h1>
-			<p>Here list services i can offer to you</p>
+			<h1 data-aos="fade" data-aos-once="true">StDarkPha</h1>
+			<p data-aos="fade-right" data-aos-once="true" data-aos-delay="400">Here list services i can offer to you</p>
 			
 			<div class="search-bar">
-				 <h2>Design --</h2>
-				 <input type="text" id="search" placeholder="Search for services..">
+				 <h2 data-aos="fade-up" data-aos-once="true">Design --</h2>
+				 <input data-aos="fade-up" data-aos-delay="200" data-aos-once="true" type="text" id="search" placeholder="Search for services..">
 			</div>
 
-			<div class="grid">
+			<div data-aos="zoom-out" data-aos-once="true" class="grid">
 				<li class="list-design">Logo</li>
 				<li class="list-design">Banner</li>
 				<li class="list-design">Flyer</li>
@@ -262,8 +277,8 @@
 				<li class="list-design">Icons</li>
 			</div>
 			
-			<h2>Video --</h2>
-			<div class="grid">
+			<h2 data-aos="fade-up" data-aos-once="true">Video --</h2>
+			<div data-aos="zoom-out" data-aos-once="true" class="grid">
 				<li class="list-video">Motion Graphic</li>
 				<li class="list-video">Company Profile</li>
 				<li class="list-video">Logo Animation</li>
@@ -279,8 +294,8 @@
 				<li class="list-video">Visual Fx</li>
 			</div>
 			
-			<h2>Website --</h2>
-			<div class="grid">
+			<h2 data-aos="fade-up" data-aos-once="true">Website --</h2>
+			<div data-aos="zoom-out" data-aos-offset="400" data-aos-once="true" class="grid">
 				<li class="list-web">Dashboard</li>
 				<li class="list-web">Login Form</li>
 				<li class="list-web">Design Website</li>
@@ -295,12 +310,12 @@
 
 	<section id="about">
 		<div class="container">
-			<h1>About StDarkPha</h1>
+			<h1 data-aos="fade-right" data-aos-once="true">About StDarkPha</h1>
 
 			<div class="about">
-				<div class="box"><img src="src/me.png" alt=""></div>
-				<div class="box">
-					<p class="btn">Hi Im behind Stdarkpha</p>
+				<div data-aos="fade-up" data-aos-once="true" data-aos-offset="500" class="box"><img src="src/me.jpg" alt="foto-saya"></div>
+				<div data-aos="fade-right" data-aos-once="true" data-aos-offset="500" data-aos-delay="200" class="box">
+					<p class="highlight">Hi Im behind Stdarkpha</p>
 					<div class="inner">
 						<p style="font-size: 18px;">My Name is <b>Farouq Mulya Al Simabua</b> you can call me <b>Farouq</b>.</p>
 						<p>I have more than 2 years experience as designer, video editor and Front-end Developer. I love learning and help someone problems, </p>
@@ -311,28 +326,30 @@
 			</div>
 		</div>
 
-		<div class="software">
-			<p>ADOBE PHOTOSHOP</p>
-			<p>ADOBE ILLUSTRATOR</p>
-			<p>ADOBE AFTER EFFECT</p>
-			<p>ADOBE PREMIER</p>
-			<p>ADOBE AUDITION</p>
-			<p>ADOBE XD</p>
-			<p>ADOBE MUSE</p>
-			<p>ADOBE FLASH</p>
-			<p>ADOBE ANIMATE</p>
-			<p>CINEMA 4D</p>
-			<p>BLENDER</p>
-			<p>MICROSOFT OFFICE</p>
+		<div data-aos="fade" data-aos-once="true" id="soft-swiper" class="swiper-container">
+		    <div class="swiper-wrapper">
+			    <p class="swiper-slide">ADOBE PHOTOSHOP</p>
+				<p class="swiper-slide">ADOBE ILLUSTRATOR</p>
+				<p class="swiper-slide">ADOBE AFTER EFFECT</p>
+				<p class="swiper-slide">ADOBE PREMIER</p>
+				<p class="swiper-slide">ADOBE AUDITION</p>
+				<p class="swiper-slide">ADOBE XD</p>
+				<p class="swiper-slide">ADOBE MUSE</p>
+				<p class="swiper-slide">ADOBE FLASH</p>
+				<p class="swiper-slide">ADOBE ANIMATE</p>
+				<p class="swiper-slide">CINEMA 4D</p>
+				<p class="swiper-slide">BLENDER</p>
+				<p class="swiper-slide">MICROSOFT OFFICE</p>
+		    </div>
 		</div>
 	</section>
 	
 	<section id="hire">
 		<div class="container">
-			<h1>Hire StDarkPha</h1>
-			<p>Hey if you want to invite me to project (commiss some project), just simply fill the form bellow</p>
+			<h1 data-aos="fade-up" data-aos-once="true">Hire StDarkPha</h1>
+			<p data-aos="fade-up" data-aos-once="true" data-aos-delay="200">Hey if you want to invite me to project (commiss some project), just simply fill the form bellow</p>
 
-			<form action="https://getform.io/f/89450585-a9be-489a-9a5a-b297194f3ad7" method="POST">
+			<form data-aos="fade-up" data-aos-once="true" action="https://getform.io/f/89450585-a9be-489a-9a5a-b297194f3ad7" method="POST">
 				<div class="div1">
 					<label for="name">Full Name:</label>
 					<input id="name" type="text" name="name" placeholder="Type Your Full Name Here" required>
@@ -345,7 +362,7 @@
 					<label for="select">Project Type :</label>
 					<select id="select" name="select" required>
 						<option value="">-- Select Project Type --</option>
-						<option value="1">Hire</option>
+						<!--<option value="1">Hire</option>-->
 						<option value="2">Design</option>
 						<option value="3">Video Services</option>
 						<option value="4">Website</option>
@@ -389,15 +406,15 @@
 
 	<section id="contact">
 		<div class="container">
-			<div class="contact-item address">
-				<p>Contact Me</p>
+			<div data-aos="fade-up" data-aos-offset="0" class="contact-item address">
+				<p data-aos="fade-up" data-aos-offset="0">Contact Me</p>
 				<p><i class="fas fa-map-marked-alt"></i> Jl. Bulak Timur Rt.004/Rw.016 Kelurahan Klender Kecamatan Duren Sawit Jakarta-Timur 13470</p>
 				<p><i class="fas fa-envelope-open-text"></i> farouqsimabua@gmail.com</p>
 				<p><i class="fab fa-whatsapp"></i> +62 898 4288 566</p>
 			</div>
 
-			<div class="contact-item sitemap">
-				<p>Site Map</p>
+			<div data-aos="fade-up" data-aos-offset="0" data-aos-delay="200" class="contact-item sitemap">
+				<p data-aos="fade-up" data-aos-offset="0" data-aos-delay="200">Site Map</p>
 				<p><a href="#reason">Why Stdarkpha</a></p>
 				<p><a href="#design">Portofolio</a></p>
 				<p><a href="#services">Services</a></p>
@@ -405,8 +422,8 @@
 				<p><a href="#hire">Hire</a></p>
 			</div>
 
-			<div class="contact-item">
-				<p>Get Connected</p>
+			<div data-aos="fade-up" data-aos-offset="0" data-aos-delay="400" class="contact-item">
+				<p data-aos="fade-up" data-aos-offset="0" data-aos-delay="400">Get Connected</p>
 				<div class="social-item">
 					<a href="https://facebook.com/farouq.simabua" class="social"><i class="fab fa-facebook-f"></i></a>
 					<a href="https://www.instagram.com/farouqmulya" class="social"><i class="fab fa-instagram"></i></a>
@@ -416,7 +433,7 @@
 		</div>
 	</section>
 
-  <footer>&copy; Copyright St.Dark_ Pha~ develop by Farouq Mulya Al Simabua | 2019</footer>
+  <footer>&copy; Copyright St.Dark_ Pha~ develop by Farouq Mulya Al Simabua | 2020</footer>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -426,7 +443,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.5.0/js/lightcase.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/plugins/jquery.lazy.youtube.min.js"></script>
   <!-- init Plugin -->
   <script src="js/js.js"></script>
 
@@ -443,188 +462,27 @@
 		})();
 	</script>
 
-  <script>
-	let html = document.querySelector(`html`);
+	<script>
+		$(function() {
+			$('iframe[data-src], img').Lazy();
+		});
 
-	$("#theme-switch").change(function () {
-		if ($(this).is(':checked')) {
-			html.style.setProperty(`--title`, `#EEF0FD`);
-			html.style.setProperty(`--regular`, `#D3D4EC`);
-			html.style.setProperty(`--dark`, `#505162`);
-			html.style.setProperty(`--theme`, `#275EFE`);
-			html.style.setProperty(`--upper`, `#0C0C0F`);
-			html.style.setProperty(`--base`, `#09090B`);
-
-			$('#root').css('background-image', 'url(src/background.jpg)');
-			$('nav').css('filter', 'invert(0)');
-			$('#loader').css('filter', 'invert(0)');
-
-			$('.needed img').css('filter', 'invert(0)');
-
-			$('#reason .box:nth-child(2)').css('background', 'var(--theme)');
-			$('#reason .box').css('border-radius', '0');
-			$('.icon-reason').css('filter', 'hue-rotate(0)');
-
-			$('#design .swiper-slide img').css('filter', 'grayscale(.6) brightness(.4) contrast(1)');
-			$('#design .swiper-slide img').mouseover(function() {
-				$(this).css('filter', 'grayscale(0) brightness(1) contrast(1)')
-			}).mouseout(function() { 
-				$(this).css('filter', 'grayscale(.6) brightness(.4) contrast(1)')
-			});
-
-			$('.website .overlay').css('filter', 'invert(0)');
-			$('.reset').css('filter', 'invert(0)');
-
-			$('li').css('border-color', 'var(--theme)');
-			$('li').css('color', 'var(--dark)');
-
-			$('li').mouseover(function() {
-				$(this).css('background-color', 'var(--theme)');
-				$(this).css('color', 'var(--title)');
-				$(this).css('border-color', 'var(--title)');
-			}).mouseout(function() { 
-				$(this).css('background-color', 'var(--upper)');
-				$(this).css('color', 'var(--dark)');
-				$(this).css('border-color', 'var(--theme)');
-			});
-
-		} else {
-			html.style.setProperty(`--title`, `#1B0408`);
-			html.style.setProperty(`--regular`, `#565656`);
-			html.style.setProperty(`--dark`, `#a5a5a5`);
-			html.style.setProperty(`--theme`, `#FF3553`);
-			html.style.setProperty(`--upper`, `#f9f9f9`);
-			html.style.setProperty(`--base`, `white`);
-
-			$('#root').css('background-image', 'url(src/background2.jpg)');
-			$('nav').css('filter', 'invert(1)');
-			$('#loader').css('filter', 'invert(1)');
-
-			$('.needed img').css('filter', 'invert(1)');
-
-			$('#reason .box').css('border-radius', '10px');
-			$('#reason .box').css('box-shadow', '0 1em 2em 0 rgba(0,0,0,.1)');
-			$('#reason .box:nth-child(2)').css('background', 'linear-gradient(-15deg, #ff0b55, #ff6652)');
-			$('.icon-reason').css('filter', 'hue-rotate(115deg)');
-			$('#reason .box:nth-child(2) p').css('color', '#eaeaea');
-
-			$('#design .swiper-slide img').css('filter', 'grayscale(1) brightness(1.5) contrast(.5)');
-			$('#design .swiper-slide img').mouseover(function() {
-				$(this).css('filter', 'grayscale(0) brightness(100%) contrast(1)')
-			}).mouseout(function() { 
-				$(this).css('filter', 'grayscale(1) brightness(1.5) contrast(.5)')
-			});
-
-			$('.website .overlay').css('filter', 'invert(1)');
-			$('.reset').css('filter', 'invert(1)');
-
-			$('li').css('border-color', 'var(--regular)');
-			$('li').css('color', 'var(--regular)');
-
-			$('li').mouseover(function() {
-				$(this).css('background-color', 'var(--regular)');
-				$(this).css('color', 'var(--base)');
-				$(this).css('border-color', 'var(--upper)');
-			}).mouseout(function() { 
-				$(this).css('background-color', 'var(--upper)');
-				$(this).css('color', 'var(--regular)');
-				$(this).css('border-color', 'var(--regular)');
-			});
-		}
-
-		if ($(window).width() < 840){  
-	        if ($(this).is(':checked')) {
-				$('#search').css('background-color', '#D3D4EC');
+		$(function() {
+			var time = new Date().getHours();
+			if (time > 7 && time < 19 ) {
+				$('html').attr('data-mode', 'noon');
 			} else {
-				$('#search').css('background-color', 'transparent');
+				$('html').attr('data-mode', 'night');
 			}
-	  }  
-	});
+		})
 
-	var time = new Date().getHours();
-	if (time > 7 && time < 19 ) {
-			html.style.setProperty(`--title`, `#1B0408`);
-			html.style.setProperty(`--regular`, `#565656`);
-			html.style.setProperty(`--dark`, `#a5a5a5`);
-			html.style.setProperty(`--theme`, `#FF3553`);
-			html.style.setProperty(`--upper`, `#f9f9f9`);
-			html.style.setProperty(`--base`, `white`);
-
-			$('#root').css('background-image', 'url(src/background2.jpg)');
-			$('nav').css('filter', 'invert(1)');
-			$('#loader').css('filter', 'invert(1)');
-
-			$('.needed img').css('filter', 'invert(1)');
-
-			$('#reason .box').css('border-radius', '10px');
-			$('#reason .box').css('box-shadow', '0 1em 2em 0 rgba(0,0,0,.1)');
-			$('#reason .box:nth-child(2)').css('background', 'linear-gradient(-15deg, #ff0b55, #ff6652)');
-			$('.icon-reason').css('filter', 'hue-rotate(115deg)');
-			$('#reason .box:nth-child(2) p').css('color', '#eaeaea');
-
-			$('#design .swiper-slide img').css('filter', 'grayscale(1) brightness(1.5) contrast(.5)');
-			$('#design .swiper-slide img').mouseover(function() {
-				$(this).css('filter', 'grayscale(0) brightness(100%) contrast(1)')
-			}).mouseout(function() { 
-				$(this).css('filter', 'grayscale(1) brightness(1.5) contrast(.5)')
-			});
-
-			$('.website .overlay').css('filter', 'invert(1)');
-			$('.reset').css('filter', 'invert(1)');
-
-			$('li').css('border-color', 'var(--regular)');
-			$('li').css('color', 'var(--regular)');
-
-			$('li').mouseover(function() {
-				$(this).css('background-color', 'var(--regular)');
-				$(this).css('color', 'var(--base)');
-				$(this).css('border-color', 'var(--upper)');
-			}).mouseout(function() { 
-				$(this).css('background-color', 'var(--upper)');
-				$(this).css('color', 'var(--regular)');
-				$(this).css('border-color', 'var(--regular)');
-			});
-	} else {
-			html.style.setProperty(`--title`, `#EEF0FD`);
-			html.style.setProperty(`--regular`, `#D3D4EC`);
-			html.style.setProperty(`--dark`, `#505162`);
-			html.style.setProperty(`--theme`, `#275EFE`);
-			html.style.setProperty(`--upper`, `#0C0C0F`);
-			html.style.setProperty(`--base`, `#09090B`);
-
-			$('#root').css('background-image', 'url(src/background.jpg)');
-			$('nav').css('filter', 'invert(0)');
-			$('#loader').css('filter', 'invert(0)');
-
-			$('.needed img').css('filter', 'invert(0)');
-
-			$('#reason .box:nth-child(2)').css('background', 'var(--theme)');
-			$('#reason .box').css('border-radius', '0');
-			$('.icon-reason').css('filter', 'hue-rotate(0)');
-
-			$('#design .swiper-slide img').css('filter', 'grayscale(.6) brightness(.4) contrast(1)');
-			$('#design .swiper-slide img').mouseover(function() {
-				$(this).css('filter', 'grayscale(0) brightness(1) contrast(1)')
-			}).mouseout(function() { 
-				$(this).css('filter', 'grayscale(.6) brightness(.4) contrast(1)')
-			});
-
-			$('.website .overlay').css('filter', 'invert(0)');
-			$('.reset').css('filter', 'invert(0)');
-
-			$('li').css('border-color', 'var(--theme)');
-			$('li').css('color', 'var(--dark)');
-
-			$('li').mouseover(function() {
-				$(this).css('background-color', 'var(--theme)');
-				$(this).css('color', 'var(--title)');
-				$(this).css('border-color', 'var(--title)');
-			}).mouseout(function() { 
-				$(this).css('background-color', 'var(--upper)');
-				$(this).css('color', 'var(--dark)');
-				$(this).css('border-color', 'var(--theme)');
-			});
-	}
-  </script>
- </body>
+		$("#theme-switch").change(function () {
+			if ($(this).is(':checked')) {
+				$('html').attr('data-mode', 'night');
+			} else {
+				$('html').attr('data-mode', 'noon');
+			}
+		})
+	</script>
+  </body>
 </html>

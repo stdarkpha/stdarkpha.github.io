@@ -625,6 +625,8 @@ html, body {
 
 header, section {
 	margin-bottom: 10em;
+	width: 100%;
+	overflow: hidden;
 }
 
 @keyframes kanan {
@@ -844,6 +846,23 @@ h2 {
 	filter: grayscale(60%) brightness(40%) contrast(1);
 }
 
+#soft-swiper .swiper-slide {
+	width: auto;
+}
+
+#soft-swiper p{
+	white-space: nowrap;
+	color: var(--dark);
+	font-family: title;
+	font-size: 28px;
+	margin: 1em;
+	cursor: pointer;
+}
+
+#soft-swiper p:hover {
+	color: var(--theme);
+}
+
 #design .swiper-slide img:hover {
 	filter: grayscale(0) brightness(100%) contrast(1);
 }
@@ -996,29 +1015,6 @@ li:hover {
 #about {
 	width: 100%;
 	overflow: hidden;
-}
-
-.software {
-	width: 130%;
-	display: flex;
-	overflow: hidden;
-	position: relative;
-	white-space: nowrap;
-	animation: slider 15s linear infinite;
-}
-
-.software p{
-	white-space: nowrap;
-	/*overflow: hidden;*/
-	color: var(--dark);
-	font-family: title;
-	font-size: 28px;
-	margin: 1em;
-	cursor: pointer;
-}
-
-.software p:hover {
-	color: var(--theme);
 }
 
 .div1 { grid-area: nama; }

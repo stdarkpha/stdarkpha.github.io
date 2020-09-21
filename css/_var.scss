@@ -1,0 +1,89 @@
+html {
+    /* dark theme preset color*/
+    --title   : #EEF0FD; 
+    --reg     : #D3D4EC; 
+    --solid   : #505162;
+    
+	--theme   : #275EFE; /* Warna Tema*/
+	--upper   : #0C0C0F;  /* Warna diatas background*/
+    --base    : #09090B;  /* Warna hitam background*/
+    --nav     : rgba(9, 9, 11, .85);
+
+    --bg      : url("../src/background.jpg");
+}
+
+html[data-mode='noon'] {
+    /* Light theme preset color*/
+    --title   : #1B0408; 
+    --reg     : #565656; 
+    --solid   : #a5a5a5;
+    
+	--theme   : #FF3553; /* Warna Tema*/
+	--upper   : #f9f9f9;  /* Warna diatas background*/
+    --base    : #fff;  /* Warna hitam background*/
+    --nav     : rgba(255, 255, 255, 0.85);
+
+    --bg      : url("../src/background2.jpg");
+
+}
+
+$title: var(--title); $reg: var(--reg); $solid: var(--solid);
+$theme: var(--theme); $upper: var(--upper); $base: var(--base);
+$bg: var(--bg); $nav: var(--nav);
+
+// Keyframes
+@keyframes kiri {
+	0% { transform: translateX(5em); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes logo {
+	0% {transform: translateY(2em); opacity: 0;}
+	100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes kanan {
+	0% { transform: translateX(-5em); }
+	100% { transform: translateX(0); }
+}
+
+@keyframes arrow {
+	0% { opacity: 0; top: -25px; }
+	50% { opacity: 1; }
+	100% { opacity: 0; top: 0; }
+}
+
+@keyframes boing {
+	0% {
+        transform: translateX(-200%);
+    }
+    
+    16% {
+        transform: translateX(32.27%);
+    }
+    
+    28% {
+        transform: translateX(-13.12%);
+    }
+    
+    44% {
+        transform: translateX(4.63%);
+    }
+    
+    59% {
+        transform: translateX(-1.64%);
+    }
+    
+    73% {
+        transform: translateX(0.58%);
+    }
+    
+    88% {
+        transform: translateX(-0.2%);
+    }
+    
+    100% {
+        transform: translateX(0);
+    }
+
+}

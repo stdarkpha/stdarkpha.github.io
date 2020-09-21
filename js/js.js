@@ -1,13 +1,19 @@
+AOS.init({
+  offset: 300,
+  duration: 600,
+  easing: 'ease-out',
+});
+
 function menu(x) {
   x.classList.toggle("change");
 
   	if($('.menu-btn').hasClass('change')){
-		$('#mobile').css('height', '100%');
-		$('#mobile').css('opacity', '1');
-	}else{
-		$('#mobile').css('height', '0');
-		$('#mobile').css('opacity', '0');
-	}
+      $('#mobile').css('height', '100%');
+      $('#mobile').css('opacity', '1');
+    }else{
+      $('#mobile').css('height', '0');
+      $('#mobile').css('opacity', '0');
+    }
 }
 
 $(".list-design").click(function(){
@@ -58,21 +64,11 @@ $("#select").change(function () {
 //Navbar Function Control
 $(window).on("scroll", function() {
     if($(window).scrollTop()) {
-          $('#logo').css('display','flex');
-          $('#logo').css('animation-name','logo');
-          $('nav').css('background','rgba(0, 0, 0,0.85)');
-          $('.left').css('animation-name','kiri');
-          $('.right').css('animation-name','kanan');
+          $('nav').addClass('active');
           lottie.setDirection(-1);
           lottie.play();
-    }
-
-    else {
-          $('#logo').css('display','none');
-          $('#logo').css('animation-name','none');
-          $('.left').css('animation-name','none');
-          $('.right').css('animation-name','none');
-          $('nav').css('background','rgba(0, 0, 0,0)');
+    } else {
+      $('nav').removeClass('active');
           lottie.setDirection(1);
           lottie.play();
     }
@@ -116,4 +112,15 @@ var swiper = new Swiper('#editing-swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+//Slider Init Software
+var swiper = new Swiper('#soft-swiper', {
+  autoplay : true,
+  slidesPerView: 'auto',
+  grabCursor: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+  },      
 });

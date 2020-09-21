@@ -1,0 +1,74 @@
+* {
+	transition: ease 0.4s;
+	text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bebas;
+    src: url("../src/BebasNeue Bold.ttf");
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; font-size: 14px;
+
+    background: $base; color: $title;
+}
+
+#logo-brand {
+	display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; // Grid Bond
+    margin: 0 auto;
+    padding: 0 2vw;
+    @include max(960px) { padding: 0 4vw; }
+    @include max(768px) { padding: 0 6vw; }
+}
+
+header, section {
+	padding: 4em 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    @include font(30px, 800);
+    color: $title;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.full {
+    @extend .swiper-container;
+    object-fit: cover;
+}
+
+.btn {
+    background: $theme; color: $base;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    padding: 1em 2.5em;
+
+    &:hover {
+        background: $title;
+    }
+}
+
+.btn2 {
+    background: transparent;
+    color: $title;
+    border: 1px solid;
+    font-weight: 400;
+    padding: 1em 2.5em;
+    &:hover {
+        background: $title; color: $base; border-color: $title;
+    }
+}

@@ -1,0 +1,25 @@
+html[data-mode='noon'] {
+    header { background-image: url("../src/background2.jpg");}
+    #logo, #loader, .problem img { filter: invert(1) grayscale(1);}
+    #reason {
+        .box { border-radius: 10px; box-shadow: 0 1em 2em 0 rgba(0,0,0,.1); }
+        .box:nth-child(2) { background: linear-gradient(-15deg, rgb(255, 11, 85), rgb(255, 102, 82)); h2 { color: $base; } p { color: $base; } }
+        .box:not(:nth-child(2)) img { filter: hue-rotate(115deg); }
+    }
+
+    .website .box:last-child {
+        color: $base; border: $base;
+    }
+
+    section.portofolio#design .swiper-slide img { 
+        filter: grayscale(1) brightness(1.5) contrast(.5);
+        &:hover {
+            filter : grayscale(0) brightness(1) contrast(1);
+        }
+    }
+
+    #services .grid li {
+        border-right-color: $reg; color: $reg;
+        &:hover { background: $reg; color: #fff; border-right-color: #fff;}
+    }
+}

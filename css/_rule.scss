@@ -1,0 +1,30 @@
+@mixin font($size, $fw) {
+    font-size: $size;
+    line-height: $size*1.618;
+    font-weight: $fw;
+}
+
+@mixin rata($flow) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $flow;
+}
+
+@mixin split ($fr,$gap) {
+    display: grid;
+    grid-template-columns: repeat($fr, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin max($val) {
+    @media (max-width: $val) { @content; }
+}
+
+@mixin min($val) {
+    @media (min-width: $val) { @content; }
+}
+
+@mixin min-h($val) {
+    @media (min-height: $val) { @content; }
+}
