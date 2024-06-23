@@ -1,0 +1,1 @@
+import{U as r,n as o}from"./C5PA8ebt.js";import{u as t}from"./nn-IcFCl.js";import"./Dt0KXldn.js";const m=r((i,a)=>{const e=t("user").value;if(!e)return o("/");if(e.role!="admin")return o("/")});export{m as default};
